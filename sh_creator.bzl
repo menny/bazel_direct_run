@@ -4,7 +4,7 @@ echo "hello from {name}"
 
 def _impl_sh(ctx):
     # Emit the executable shell script.
-    script = ctx.actions.declare_file('%s-print.sh' % ctx.label.name)
+    script = ctx.outputs.out
     script_content = script_template_error.format(
         name = ctx.label.name
     )
