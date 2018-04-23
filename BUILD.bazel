@@ -1,0 +1,2 @@
+load(":sh_creator.bzl", "sh_print_rule")
+sh_print_rule(name="print_me")
